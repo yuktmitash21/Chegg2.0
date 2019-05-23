@@ -48,7 +48,7 @@ public class Database {
      */
     public boolean validUser(User user) {
         //TODO in class
-        return userArrayList.contains(user);
+        return false;
     }
     /**
      * only called when a user is found to be invalid
@@ -58,14 +58,8 @@ public class Database {
      */
     public String returnErrorMessage(User user) {
         //TODO in class
-        boolean containsUsername = false;
-        for (User userObj: userArrayList) {
-            if (userObj.getUsername().equals(user.getUsername())) {
-                containsUsername = true;
-                break;
-            }
-        }
-        return containsUsername ? "Invalid password" : "Invalid username";
+        return null;
+
     }
 
     /**
@@ -75,7 +69,7 @@ public class Database {
      */
     public void registerUser(User user) {
         //TODO in class
-        userArrayList.add(user);
+
     }
 
     /**
@@ -85,7 +79,7 @@ public class Database {
      */
     public void addQuestion(Question question) {
        //TODO in class
-        questionArrayList.add(question);
+
 
     }
 
